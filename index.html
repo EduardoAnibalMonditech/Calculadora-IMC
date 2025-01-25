@@ -24,10 +24,9 @@
                     <label for="weith">Peso em KG</label>
                     <div class="input-field">
                         <i class="fa-solid fa-weight-scale"></i>
-                        <input type="number" id="weight" name="weight" placeholder="Digite seu peso" required>
-                         <span>
-                            KG
-                         </span>
+                        <input type="number" id="weight" name="weight" placeholder="Digite seu peso" maxlength="4" required>
+                         <span>KG</span>
+                        </div>
                     </div>
                 </div>
 
@@ -35,10 +34,8 @@
                     <label for="height">Altura em metros</label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" id="height" name="height" placeholder="Digite seu peso" required>
-                         <span>
-                            M
-                         </span>
+                        <input type="number" id="height" name="height" placeholder="Digite seu peso"  maxlength="3" required>
+                        <span>M</span>
                     </div>
                 </div>
 
@@ -49,11 +46,11 @@
                 <div id="infos" class="hidden">
                     <div id="result">
                         <div id="bmi"> 
-                        <span id="value">5555</span>
-                        <span> Seu IMC </span>
+                        <span id="value"></span>
+                        <span> Seu IMC: </span>
                         </div>
                         <div id="description">
-                            <span>5555</span>
+                            <span></span>
                     </div>
                 </div>
                 <div id="more-info">
@@ -64,5 +61,6 @@
             </div>
      
         </main>
+        <script src="assets\js\script.js"></script> 
 </body>
 </html>
