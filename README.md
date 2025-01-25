@@ -12,7 +12,7 @@ Este projeto é uma aplicação que permite aos usuários calcular seu IMC com b
 
 # 📝 **Changelog**
 
-## **Versão 1.1** (Atual)
+# **Versão 1.1** (Atual)
 
 - **Cálculo de IMC**  
   - Implementação completa da lógica para calcular o Índice de Massa Corporal (IMC) utilizando JavaScript.
@@ -37,7 +37,7 @@ Este projeto é uma aplicação que permite aos usuários calcular seu IMC com b
 ## 🎨 Visualização do Projeto  
 
 Acesse a versão funcional da Calculadora de IMC através do link abaixo:  
-[**Clique aqui para visualizar**]((https://rawcdn.githack.com/Dev-Fubuki/Calculadora-IMC/7a675cfe36374b48594590d30332ea4e4f1e6034/index.html))  
+[**Clique aqui para visualizar**](https://rawcdn.githack.com/Dev-Fubuki/Calculadora-IMC/7a675cfe36374b48594590d30332ea4e4f1e6034/index.html)
 
 ---
 
