@@ -6,9 +6,35 @@ form.addEventListener('submit', function(event) {
   const weight = parseFloat(document.getElementById('weight').value);
   const height = parseFloat(document.getElementById('height').value) / 100; // Convertendo centímetros para metros
 
-  if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
-    alert('Por favor, insira valores válidos para peso e altura.');
+  if (!isNaN(weight) || !isNaN(height) || weight != 0 || height != 0) {
+
+    weight.addEventListener('input', (event) => {
+      let value = event.target.value;
+      value = value.replace(/[^0-9.,]/g, ''); // regex para remover oque não é numero ou . ou ,
+
+      value = value.replace(',', '.'); //substitui , por . para padronizar retorno
+
+      if (value) {
+          event.target.value = `${parseFloat(value).toFixed(2)} cm`;
+      } else {
+          event.target.value = ''; // Limpa o campo se o valor for inválido
+      }
+  });
+
+  weight.addEventListener('blur', (event) => {
+      // Remove o "cm" caso o campo fique vazio ao perder o foco
+      if (!event.target.value.trim()) {
+          event.target.value = '';
+      }
+  });
+
     return;
+
+  } 
+  else {
+    
+    alert('Por favor, insira valores válidos para peso e altura.');
+    
   }
 
   const bmi = (weight / (height * height)).toFixed(2);
