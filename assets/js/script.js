@@ -28,13 +28,12 @@ form.addEventListener('submit', function(event) {
       }
   });
 
-    return;
-
   } 
   else {
     
     alert('Por favor, insira valores válidos para peso e altura.');
-    
+
+    return 
   }
 
   const bmi = (weight / (height * height)).toFixed(2);
